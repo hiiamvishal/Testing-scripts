@@ -1,0 +1,19 @@
+name: Print and Create File
+
+on: [push]
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Print a message
+        run: echo "Hello from GitHub Actions!"
+
+      - name: Create a text file
+        run: echo "This is a file created by GitHub Actions" > output.txt
+
+      - name: Show file contents
+        run: cat output.txt
