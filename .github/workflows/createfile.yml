@@ -10,7 +10,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Print a message
-        run: echo "Hello from GitHub Actions!"
+        run: echo "Hello from GitHub Actions! This is a test pipeline"
 
       - name: Create a text file
         run: echo "This is a file created by GitHub Actions" > output.txt
