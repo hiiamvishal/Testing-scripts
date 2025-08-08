@@ -22,4 +22,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: my-output-file
-          path: output.txt
+          path: pipeline-output.txt
